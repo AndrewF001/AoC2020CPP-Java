@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.util.ArrayList;
 
 public class Day2 extends DefaultClass{
@@ -60,10 +59,7 @@ public class Day2 extends DefaultClass{
 
     private boolean IsPasswordPart2(int pos1, int pos2, char C, String password)
     {
-        if (password.charAt(pos1-1) == C ^ password.charAt(pos2-1) == C)
-            return true;
-        return false;
-
+        return password.charAt(pos1 - 1) == C ^ password.charAt(pos2 - 1) == C;
     }
 
 }

@@ -142,6 +142,7 @@
     <ClCompile Include="AoC2020CPP.cpp" />
     <ClCompile Include="Day1.cpp" />
     <ClCompile Include="Day2.cpp" />
+    <ClCompile Include="Day3.cpp" />
     <ClCompile Include="DefaultClass.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="UsefulMethods.cpp" />
@@ -149,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Day1.h" />
     <ClInclude Include="Day2.h" />
+    <ClInclude Include="Day3.h" />
     <ClInclude Include="DefaultClass.h" />
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="UsefulMethods.h" />

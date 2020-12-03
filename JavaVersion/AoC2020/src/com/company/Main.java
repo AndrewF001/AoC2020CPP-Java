@@ -7,6 +7,6 @@ public class Main {
         DefaultClass program;
         program = new Day1();
         program = new Day2();
-
+        program = new Day3();
     }
 }
