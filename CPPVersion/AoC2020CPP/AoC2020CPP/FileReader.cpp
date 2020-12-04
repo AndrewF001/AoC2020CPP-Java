@@ -90,8 +90,43 @@ std::vector<std::string> FileReader::SplitString(char delimiter)
 			temp.append(std::string(1,c));
 		}
 	}
+	out.push_back(temp);
 	return out;
 }
+
+std::vector<std::string> FileReader::SplitString(std::string str, char delimiter)
+{
+	std::string temp = "";
+	std::vector<std::string> out;
+	for (int i = 0; i < str.size(); i++)
+	{
+		if (str[i] == delimiter)
+		{
+			out.push_back(temp);
+			temp.clear();
+		}
+		else
+		{
+			temp.append(std::string(1, str[i]));
+		}
+	}	
+	out.push_back(temp);
+	return out;
+}
+
+std::string FileReader::ReplaceChar(std::string str, char Look, char Change)
+{
+	std::string out;
+	for (int i = 0; i < str.length(); i++)
+	{
+		if (str[i] == Look)
+			out.append(std::string(1,Change));
+		else
+			out.append(std::string(1, str[i]));
+	}
+	return out;
+}
+
 void FileReader::PrintFiles()
 {
 

@@ -8,5 +8,6 @@ public class Main {
         program = new Day1();
         program = new Day2();
         program = new Day3();
+        program = new Day4();
     }
 }
