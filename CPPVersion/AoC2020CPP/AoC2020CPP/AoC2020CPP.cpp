@@ -12,9 +12,10 @@ int main()
     program = Day3();
     program = Day4();
     program = Day5();
+    program = Day6();
 
 
-    std::cout << "\nThe entier program took: ";
+    std::cout << "\nThe entire program took: ";
     std::chrono::high_resolution_clock::duration dur = std::chrono::high_resolution_clock::now() - Start;
     std::cout << dur.count() << " nanoseconds    :    " << (double)dur.count() / 1000000 << " milliseconds\n";
 

@@ -1,5 +1,6 @@
 package com.company;
 
+import java.sql.Time;
 import java.util.ArrayList;
 
 public class Day5 extends DefaultClass {
@@ -22,6 +23,7 @@ public class Day5 extends DefaultClass {
         for (int i = 0; i < inp.size(); i++) {
             plane[BinarySearch(Rowinp.get(i),0,127 )][BinarySearch(Colluminp.get(i),0,7)] = true;
         }
+        ResetClock();
         for (int i = 127; i > -1; i--) {
             for (int j = 7; j > -1; j--) {
                 if(plane[i][j])
@@ -32,6 +34,8 @@ public class Day5 extends DefaultClass {
                 }
             }
         }
+        TimeClock();
+        ResetClock();
         boolean pass=true;
         for (int i = 0; i < 127; i++) {
             for (int j = 0; j < 8; j++) {
@@ -44,6 +48,7 @@ public class Day5 extends DefaultClass {
                     pass=false;
             }
         }
+        TimeClock();
     }
 
     private int BinarySearch(String str, int min, int max)

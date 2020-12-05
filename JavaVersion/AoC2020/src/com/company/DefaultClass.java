@@ -30,4 +30,10 @@ public class DefaultClass {
         System.out.println(System.nanoTime()-Start + " nanoseconds : " + ((double)(System.nanoTime()-Start)/100000) + " milliseconds");
     }
 
+    public void TimeResetClock()
+    {
+        TimeClock();
+        ResetClock();
+    }
+
 }

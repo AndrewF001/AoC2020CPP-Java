@@ -27,3 +27,9 @@ void DefaultClass::TimeClock()
 	std::chrono::high_resolution_clock::duration dur = std::chrono::high_resolution_clock::now() - Start;
 	std::cout << dur.count()<<" nanoseconds    :    " <<  (double)dur.count()/1000000<< " milliseconds\n";
 }
+
+void DefaultClass::TimeResetClock()
+{
+	TimeClock();
+	ResetClock();
+}

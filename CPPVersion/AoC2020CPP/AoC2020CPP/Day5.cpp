@@ -7,10 +7,10 @@ Day5::Day5() : DefaultClass(5, true)
 	{
 		Insert(&inp[i]);
 	}
-	ResetClock();
+	std::cout << "File Read and insert into array: ";
+	TimeResetClock();
 	Part1();
-	TimeClock();
-	ResetClock();
+	TimeResetClock();
 	Part2();
 	TimeClock();
 }

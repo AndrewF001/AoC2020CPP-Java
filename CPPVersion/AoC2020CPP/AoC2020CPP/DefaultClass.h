@@ -17,6 +17,7 @@ protected:
 	FileReader FR;
 	void TimeClock();
 	void ResetClock();
+	void TimeResetClock();
 
 private:
 	std::chrono::high_resolution_clock::time_point Start;
