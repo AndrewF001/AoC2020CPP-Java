@@ -9,7 +9,7 @@ class Day4 :
 	};
 private:
 	std::vector<PassPort> Data;
-	void InputString(std::string);
+	void InputString(std::string*);
 	bool IsValid(PassPort*);
 	void Part1();
 	void Part2();

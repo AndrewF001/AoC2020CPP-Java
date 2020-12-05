@@ -1,7 +1,7 @@
 #include "FileReader.h"
 #include <string>
 #include <sstream>
-
+#include <memory>
 
 FileReader::FileReader()
 {
@@ -114,17 +114,13 @@ std::vector<std::string> FileReader::SplitString(std::string str, char delimiter
 	return out;
 }
 
-std::string FileReader::ReplaceChar(std::string str, char Look, char Change)
+void FileReader::ReplaceChar(std::string *str, char Look, char Change)
 {
-	std::string out;
-	for (int i = 0; i < str.length(); i++)
+	for (int i = 0; i < str->length(); i++)
 	{
-		if (str[i] == Look)
-			out.append(std::string(1,Change));
-		else
-			out.append(std::string(1, str[i]));
+		if (str->at(i) == Look)
+			str->at(i) = Change;
 	}
-	return out;
 }
 
 void FileReader::PrintFiles()

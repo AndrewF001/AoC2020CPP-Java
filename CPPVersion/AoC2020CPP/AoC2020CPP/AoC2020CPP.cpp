@@ -11,7 +11,7 @@ int main()
     program = Day2();
     program = Day3();
     program = Day4();
-
+    program = Day5();
 
 
     std::cout << "\nThe entier program took: ";

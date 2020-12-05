@@ -4,7 +4,6 @@
 #include <iostream>
 #include <vector>
 
-
 class FileReader
 {
 public:
@@ -17,7 +16,7 @@ public:
 	std::vector<std::string> SplitString(char);
 	std::vector<std::string> SplitString(std::string, char);
 	void PrintFiles();
-	std::string ReplaceChar(std::string str, char Look, char Replace);
+	void ReplaceChar(std::string *str, char Look, char Replace);
 
 private:
 	bool OpenFile();

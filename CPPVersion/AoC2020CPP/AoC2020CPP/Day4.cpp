@@ -19,7 +19,7 @@ Day4::Day4() : DefaultClass(4, true)
 	passports.push_back(temp);
 	for (int i = 0; i < passports.size(); i++)
 	{
-		InputString(passports[i]);
+		InputString(&passports[i]);
 	}
 	std::cout << "File read and extract to data type: ";
 	TimeClock();
@@ -31,10 +31,10 @@ Day4::Day4() : DefaultClass(4, true)
 	TimeClock();
 }
 	
-void Day4::InputString(std::string str)
+void Day4::InputString(std::string* str)
 {
-	str = FR.ReplaceChar(str, ' ', ':');
-	std::vector<std::string> arr = FR.SplitString(str,':');
+	 FR.ReplaceChar(str, ' ', ':');
+	std::vector<std::string> arr = FR.SplitString(*str,':');
 	Data.push_back(PassPort());
 	for (int i = 0; i < arr.size(); i+=2)
 	{
