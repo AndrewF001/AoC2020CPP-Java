@@ -1,6 +1,5 @@
 package com.company;
 
-import java.sql.Time;
 import java.util.ArrayList;
 
 public class Day5 extends DefaultClass {
