@@ -12,5 +12,6 @@ private:
 
 public:
     Day6();
+
 };
 

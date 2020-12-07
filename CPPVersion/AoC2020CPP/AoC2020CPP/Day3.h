@@ -9,6 +9,5 @@ private:
 
 public:
     Day3();
-
 };
 

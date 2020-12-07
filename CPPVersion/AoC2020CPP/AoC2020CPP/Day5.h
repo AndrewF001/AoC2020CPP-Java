@@ -11,6 +11,5 @@ private:
     int BinarySearch(char*,int,int);
 public:
     Day5();
-
 };
 

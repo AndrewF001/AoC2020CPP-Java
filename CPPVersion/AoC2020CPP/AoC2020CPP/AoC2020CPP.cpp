@@ -7,13 +7,20 @@ int main()
     std::chrono::high_resolution_clock::time_point Start = std::chrono::high_resolution_clock::now();
 
 
-    DefaultClass program = Day1();
-    program = Day2();
-    program = Day3();
-    program = Day4();
-    program = Day5();
-    program = Day6();
-
+    DefaultClass* program = new Day1();
+    delete program;
+    program = new Day2();
+    delete program;
+    program = new Day3();
+    delete program;
+    program = new Day4();
+    delete program;
+    program = new Day5();
+    delete program;
+    program = new Day6();
+    delete program;
+    program = new Day7();
+    delete program;
 
     std::cout << "\nThe entire program took: ";
     std::chrono::high_resolution_clock::duration dur = std::chrono::high_resolution_clock::now() - Start;

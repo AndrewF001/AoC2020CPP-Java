@@ -11,6 +11,7 @@ class DefaultClass
 {
 public:
 	DefaultClass(int, bool);
+	~DefaultClass();
 
 protected:
 	std::string FileName;
@@ -21,7 +22,10 @@ protected:
 
 private:
 	std::chrono::high_resolution_clock::time_point Start;
+	std::chrono::high_resolution_clock::time_point ConstructorStart;
+	int day;
 	void FileNameCalc(int);
+
 
 
 };

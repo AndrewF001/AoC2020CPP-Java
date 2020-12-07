@@ -74,6 +74,13 @@ public class FileReader {
         return list;
     }
 
+    public ArrayList<String> SplitString(String str, String Dilimer)
+    {
+        String[] out = str.split(Dilimer);
+        ArrayList<String> list = new ArrayList<String>(Arrays.asList(out));
+        return list;
+    }
+
     public static void PrintFiles()
     {
         File file = new File(".");
