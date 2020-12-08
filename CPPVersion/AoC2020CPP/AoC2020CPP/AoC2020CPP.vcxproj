@@ -147,6 +147,7 @@
     <ClCompile Include="Day5.cpp" />
     <ClCompile Include="Day6.cpp" />
     <ClCompile Include="Day7.cpp" />
+    <ClCompile Include="Day8.cpp" />
     <ClCompile Include="DefaultClass.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="UsefulMethods.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Day5.h" />
     <ClInclude Include="Day6.h" />
     <ClInclude Include="Day7.h" />
+    <ClInclude Include="Day8.h" />
     <ClInclude Include="DayClasses.h" />
     <ClInclude Include="DefaultClass.h" />
     <ClInclude Include="FileReader.h" />
