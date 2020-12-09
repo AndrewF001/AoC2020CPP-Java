@@ -23,6 +23,8 @@ int main()
     delete program;
     program = new Day8();
     delete program;
+    program = new Day9();
+    delete program;
 
     std::cout << "\nThe entire program took: ";
     std::chrono::high_resolution_clock::duration dur = std::chrono::high_resolution_clock::now() - Start;

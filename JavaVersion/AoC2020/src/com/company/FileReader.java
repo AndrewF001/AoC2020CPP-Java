@@ -59,6 +59,16 @@ public class FileReader {
         return integers;
     }
 
+    public ArrayList<Long>ReadLongs()
+    {
+        ArrayList<Long> integers = new ArrayList<>();
+        ArrayList<String> str = ReadLine();
+        for (String x:str) {
+            integers.add(Long.parseLong(x));
+        }
+        return integers;
+    }
+
     public ArrayList<String> SplitString()
     {
         String str = ReadStraight();

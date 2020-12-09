@@ -72,6 +72,17 @@ std::vector<int> FileReader::ReadInts(std::vector<std::string> inp)
 	return out;
 }
 
+std::vector<long long> FileReader::ReadLong()
+{
+	long x;
+	std::vector<long long> out;
+	OpenFile();
+	while (Reader >> x)
+		out.push_back(x);
+	CloseFile();
+	return out;
+}
+
 std::vector<std::string> FileReader::SplitString(char delimiter)
 {
 	char c;
