@@ -16,6 +16,7 @@ public class Main {
         program = new Day7();
         program = new Day8();
         program = new Day9();
+        program = new Day10();
 
         System.out.println("\nThe entire program took: " + (System.nanoTime()-Start) + " nanoseconds : " + ((double)(System.nanoTime()-Start)/100000) + " milliseconds");
     }
