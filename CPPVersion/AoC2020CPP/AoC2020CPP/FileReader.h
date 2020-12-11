@@ -14,6 +14,7 @@ public:
 	std::vector<int> ReadInts();
 	std::vector<int> ReadInts(std::vector<std::string>);
 	std::vector<long long>ReadLong();
+	std::vector<std::vector<char>> ReadCharGrid();
 	std::vector<std::string> SplitString(char);
 	std::vector<std::string> SplitString(std::string, char);
 	void PrintFiles();

@@ -83,6 +83,27 @@ std::vector<long long> FileReader::ReadLong()
 	return out;
 }
 
+std::vector<std::vector<char>> FileReader::ReadCharGrid()
+{
+	OpenFile();
+	std::vector<std::vector<char>> out;
+	out.push_back(std::vector<char>());
+	char c=NULL;
+	int i = 0;
+	while (Reader.get(c))
+	{
+		if (c == '\n')
+		{
+			i++;
+			out.push_back(std::vector<char>());
+		}
+		else
+			out[i].push_back(c);
+	}
+	out.resize(out.size() - 1);
+	return out;
+}
+
 std::vector<std::string> FileReader::SplitString(char delimiter)
 {
 	char c;
