@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        long Start = System.nanoTime();
+        long Start = System.currentTimeMillis();
 
         FileReader.PrintFiles();
         DefaultClass program;
@@ -13,13 +13,14 @@ public class Main {
         program = new Day4();
         program = new Day5();
         program = new Day6();
-        program = new Day7();
+        //program = new Day7();
         program = new Day8();
         program = new Day9();
         program = new Day10();
-        program = new Day11();
+        //program = new Day11();
+        program = new Day12();
 
-        System.out.println("\nThe entire program took: " + (System.nanoTime()-Start) + " nanoseconds : " + ((double)(System.nanoTime()-Start)/100000) + " milliseconds");
+        System.out.println("\nThe entire program took: " + (System.currentTimeMillis()-Start) + " Milliseconds");
     }
 
 

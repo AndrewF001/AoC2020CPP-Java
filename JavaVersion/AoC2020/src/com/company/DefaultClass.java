@@ -4,7 +4,7 @@ public class DefaultClass {
 
     public String FileName;
     public FileReader fr;
-    private long Start = System.nanoTime();
+    private long Start = System.currentTimeMillis();
 
     public DefaultClass(int day, boolean ContainsFile)
     {
@@ -22,12 +22,12 @@ public class DefaultClass {
 
     public void ResetClock()
     {
-        Start = System.nanoTime();
+        Start = System.currentTimeMillis();
     }
 
     public void TimeClock()
     {
-        System.out.println(System.nanoTime()-Start + " nanoseconds : " + ((double)(System.nanoTime()-Start)/100000) + " milliseconds");
+        System.out.println(System.currentTimeMillis()-Start + " milliseconds");
     }
 
     public void TimeResetClock()
