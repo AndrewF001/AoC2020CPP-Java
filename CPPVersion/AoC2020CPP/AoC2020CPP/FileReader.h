@@ -17,6 +17,7 @@ public:
 	std::vector<std::vector<char>> ReadCharGrid();
 	std::vector<std::string> SplitString(char);
 	std::vector<std::string> SplitString(std::string, char);
+	std::vector<int> SplitToInt(std::string, char);
 	void PrintFiles();
 	void ReplaceChar(std::string *str, char Look, char Replace);
 

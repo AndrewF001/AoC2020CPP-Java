@@ -31,6 +31,8 @@ int main()
     //delete program;
     program = new Day12();
     delete program;
+    program = new Day13();
+    delete program;
 
 
     std::cout << "\nThe entire program took: ";

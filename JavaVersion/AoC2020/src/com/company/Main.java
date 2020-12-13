@@ -19,7 +19,7 @@ public class Main {
         program = new Day10();
         //program = new Day11();
         program = new Day12();
-
+        program = new Day13();
         System.out.println("\nThe entire program took: " + (System.currentTimeMillis()-Start) + " Milliseconds");
     }
 

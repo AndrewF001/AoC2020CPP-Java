@@ -146,6 +146,26 @@ std::vector<std::string> FileReader::SplitString(std::string str, char delimiter
 	return out;
 }
 
+std::vector<int> FileReader::SplitToInt(std::string str, char delimiter)
+{
+	std::string temp = "";
+	std::vector<int> out;
+	for (int i = 0; i < str.size(); i++)
+	{
+		if (str[i] == delimiter)
+		{
+			out.push_back(std::stoi(temp));
+			temp.clear();
+		}
+		else
+		{
+			temp.append(std::string(1, str[i]));
+		}
+	}
+	out.push_back(std::stoi(temp));
+	return out;
+}
+
 void FileReader::ReplaceChar(std::string *str, char Look, char Change)
 {
 	for (int i = 0; i < str->length(); i++)
